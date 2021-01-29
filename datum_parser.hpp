@@ -7,6 +7,7 @@
 #include <sstream>
 #include <iostream>
 #include <string>
+#include <functional>
 #include "date.h"
 
 namespace datum
