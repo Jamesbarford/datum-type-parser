@@ -214,7 +214,7 @@ unsigned long parse_date(std::string const &date_string, Pattern const &pattern)
 		return 0;
 	}
 
-	auto tp_days = floor<date::days>(tp);
+	auto tp_days = date::floor<date::days>(tp);
 
 	return std::chrono::duration_cast<std::chrono::milliseconds>(tp_days.time_since_epoch()).count();
 }
